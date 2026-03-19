@@ -78,9 +78,10 @@ tbody tr:nth-child(even){background:rgba(26,54,93,.02)}tbody tr:hover{background
 .hamburger span{width:18px;height:2px;background:var(--fg);border-radius:1px;transition:.2s}
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:999}.overlay.show{display:block}
 @media(max-width:900px){.sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0);box-shadow:4px 0 24px rgba(26,54,93,.12)}.hamburger{display:flex}.main{margin-left:0}.cover{padding:80px 24px 60px}.chapter-header{padding:28px 20px 18px}.chapter-content{padding:20px 20px 28px}.chapter-content h3{font-size:1.15rem}pre{padding:16px;font-size:.78rem}}
-.chapter-section{opacity:0;transform:translateY(20px)}.chapter-section.visible{animation:fadeInUp .5s ease forwards}
+.chapter-section{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}.chapter-section.visible{opacity:1;transform:translateY(0)}
 @keyframes fadeInUp{to{opacity:1;transform:translateY(0)}}
-.part-header{opacity:0;transform:translateY(20px)}.part-header.visible{animation:fadeInUp .5s ease forwards}
+.part-header{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}.part-header.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.chapter-section,.part-header{opacity:1!important;transform:none!important}}
 </style>
 </head>
 <body>
