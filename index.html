@@ -82,6 +82,20 @@ tbody tr:nth-child(even){background:rgba(26,54,93,.02)}tbody tr:hover{background
 @media(max-width:900px){.sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0);box-shadow:4px 0 24px rgba(26,54,93,.12)}.hamburger{display:flex}.main{margin-left:0}.cover{padding:80px 24px 60px}.chapter-header{padding:28px 20px 18px}.chapter-content{padding:20px 20px 28px}.chapter-content h3{font-size:1.15rem}pre{padding:16px;font-size:.78rem}}
 .chapter-section{opacity:1;transform:none}
 .part-header{opacity:1;transform:none}
+/* ═══════ COLOPHON (판권 페이지) ═══════ */
+.colophon{margin:80px 0 0;padding:72px 0 48px;border-top:1px solid var(--border);text-align:center}
+.colophon-title-area{margin-bottom:40px}
+.colophon-book-title{font-family:'Noto Serif KR',serif;font-size:1.15rem;font-weight:900;color:var(--fg);letter-spacing:-.01em;margin-bottom:6px}
+.colophon-book-sub{font-family:'Pretendard',sans-serif;font-size:.7rem;color:var(--muted);letter-spacing:.02em}
+.colophon-divider{width:32px;height:1px;background:var(--accent-gold);margin:32px auto;opacity:.4}
+.colophon-info{font-family:'Pretendard',sans-serif;font-size:.75rem;line-height:2.2;color:var(--muted);letter-spacing:.005em}
+.colophon-info strong{color:var(--fg);font-weight:600;display:inline-block;min-width:80px;text-align:right;margin-right:12px}
+.colophon-price{display:inline-block;margin-top:28px;padding:8px 28px;border:1.5px solid var(--accent-gold);border-radius:20px;font-family:'Pretendard',sans-serif;font-size:.78rem;font-weight:700;color:var(--accent-gold);letter-spacing:.04em}
+.colophon-copyright{margin-top:40px;padding-top:28px;border-top:1px solid var(--border);font-family:'Pretendard',sans-serif;font-size:.65rem;line-height:1.9;color:var(--muted);letter-spacing:.005em}
+.colophon-copyright p{text-align:center;font-size:.65rem;margin-bottom:6px}
+.colophon-publisher{margin-top:36px}
+.colophon-publisher-name{font-family:'Pretendard',sans-serif;font-size:.72rem;font-weight:700;color:var(--fg);letter-spacing:.02em;margin-bottom:4px}
+.colophon-publisher-info{font-family:'Pretendard',sans-serif;font-size:.62rem;color:var(--muted);line-height:1.8}
 </style>
 </head>
 <body>
@@ -4808,6 +4822,45 @@ Chapter 20의 Fake 필터를 작동시켜서 애초에 들어가지 않는 게 �
 
 </div>
 </article>
+
+<section class="colophon">
+  <div class="colophon-title-area">
+    <div class="colophon-book-title">공시의 숨겨진 코드</div>
+    <div class="colophon-book-sub">DART 공시 바이블 — 기업의 진실은 공시에 있다</div>
+  </div>
+
+  <div class="colophon-divider"></div>
+
+  <div class="colophon-info">
+    <strong>초판 1쇄</strong> 2026년 3월 20일<br>
+    <strong>지은이</strong> 소셜브레인<br>
+    <strong>펴낸곳</strong> 소셜브레인<br>
+    <strong>등록번호</strong> 251002023000251<br>
+    <strong>등록일자</strong> 2023년 10월 13일<br>
+    <strong>소재지</strong> 서울특별시 마포구<br>
+    <strong>형태</strong> 웹 전자책 (HTML)<br>
+  </div>
+
+  <div class="colophon-price">정가 20,000원</div>
+
+  <div class="colophon-divider"></div>
+
+  <div class="colophon-publisher">
+    <div class="colophon-publisher-name">소셜브레인</div>
+    <div class="colophon-publisher-info">
+      출판사 등록번호 251002023000251<br>
+      서울특별시 마포구 | 등록일자 2023.10.13
+    </div>
+  </div>
+
+  <div class="colophon-copyright">
+    <p>© 2026 소셜브레인. All rights reserved.</p>
+    <p>이 책의 저작권은 소셜브레인에 있습니다.</p>
+    <p>저작권법에 의해 보호를 받는 저작물이므로 무단 전재와 무단 복제를 금합니다.</p>
+    <p>이 책 내용의 전부 또는 일부를 이용하려면 반드시 저작권자의 서면 동의를 받아야 합니다.</p>
+    <p>잘못된 책은 구입처에서 교환해 드립니다.</p>
+  </div>
+</section>
 
 </div>
 </main>
